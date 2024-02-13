@@ -27,7 +27,7 @@ func getTime(w http.ResponseWriter, req *http.Request) {
   currentTime := time.Now();
 
   response := TimeResponse{
-    CurrentTime: currentTime.Format("2006-01-02 15:04:05"),
+    CurrentTime: currentTime.Format(time.RFC3339),
   };
 
   jsonResponse, err := json.Marshal(response);

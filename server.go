@@ -42,7 +42,6 @@ func getTime(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	fmt.Println("Hello server");
   http.HandleFunc("/time", getTime);
   http.HandleFunc("/", serverHandle);
 

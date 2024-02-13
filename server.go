@@ -49,4 +49,5 @@ func main() {
 
   http.ListenAndServe(":8795", nil);
   fmt.Println("Server is running on port 8795");
+  fmt.Println("Hello, Golang!");
 }
